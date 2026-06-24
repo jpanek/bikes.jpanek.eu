@@ -90,16 +90,25 @@
 <!-- ========================================== -->
 <!-- Aligned Bottom CTA Conversion Section     -->
 <!-- ========================================== -->
-<section class="bottom-cta-conversion" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 5rem; padding-bottom: 3rem;">
-    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 0 0 0.75rem 0; letter-spacing: -0.02em; color: var(--text-main);">
-        Premium Care. Undivided Focus.
+<!-- ========================================== -->
+<!-- Simplified Bottom CTA Section              -->
+<!-- ========================================== -->
+<section class="bottom-cta-conversion" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 4rem; padding-bottom: 4rem;">
+    <h2 style="font-size: 1.6rem; font-weight: 700; margin: 0 0 2rem 0; letter-spacing: -0.01em; color: var(--text-main);">
+        Ready to book?
     </h2>
-    <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 480px; margin: 0 auto 2rem auto; line-height: 1.6;">
-        Bikes are handled individually with absolute focus on one machine at a time. Review our service tiers to find the right baseline for your setup.
-    </p>
 
-    <a href="{{ url_for('lang_services', lang='en') }}" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.15); color: var(--text-main); padding: 0.8rem 1.8rem; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 0.9rem; transition: background 0.2s;">
-        Explore Service Packages
-    </a>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <!-- Primary Accent Link -->
+        <a href="{{ url_for('lang_services', lang='en') }}" style="background: var(--accent); color: #000; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.9rem; white-space: nowrap;">
+            Explore Service Packages
+        </a>
+
+        <!-- Secondary Outline Link -->
+        <a href="{{ url_for('lang_contact', lang='en') }}" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); color: var(--text-main); padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.9rem; white-space: nowrap;">
+            Open Workshop Line &rarr;
+        </a>
+    </div>
 </section>
+
 {% endblock %}
