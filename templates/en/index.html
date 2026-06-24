@@ -87,12 +87,19 @@
 
 -->
 
-<!-- Bottom CTA Conversion block -->
-<section class="bottom-cta-conversion" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 4rem; padding-bottom: 2rem;">
-    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em;">Schedule a Workshop Slot</h2>
-    <p style="font-size: 1rem; color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem auto; line-height: 1.5;">
-        Bikes are handled individually with full focus on one job at a time.
+<!-- ========================================== -->
+<!-- Aligned Bottom CTA Conversion Section     -->
+<!-- ========================================== -->
+<section class="bottom-cta-conversion" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 5rem; padding-bottom: 3rem;">
+    <h2 style="font-size: 1.8rem; font-weight: 700; margin: 0 0 0.75rem 0; letter-spacing: -0.02em; color: var(--text-main);">
+        Premium Care. Undivided Focus.
+    </h2>
+    <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 480px; margin: 0 auto 2rem auto; line-height: 1.6;">
+        Bikes are handled individually with absolute focus on one machine at a time. Review our service tiers to find the right baseline for your setup.
     </p>
-    <a href="{{ url_for('lang_services', lang='en') }}" style="background: var(--accent); color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 0.9rem;">Explore Service Packages</a>
+
+    <a href="{{ url_for('lang_services', lang='en') }}" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.15); color: var(--text-main); padding: 0.8rem 1.8rem; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 0.9rem; transition: background 0.2s;">
+        Explore Service Packages
+    </a>
 </section>
 {% endblock %}
