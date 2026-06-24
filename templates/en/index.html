@@ -1,0 +1,83 @@
+<!-- templates/en/index.html-->
+
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section" style="padding: 4rem 0 3rem 0; max-width: 800px;">
+    <h1 style="font-size: 3.2rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1.2rem; color: var(--text-main);">
+        Performance care for <span style="color: var(--accent); display: inline-block;">road &amp; gravel.</span>
+    </h1>
+    <p style="font-size: 1.25rem; line-height: 1.6; color: var(--text-muted); font-weight: 400; max-width: 650px;">
+        Dedicated workshop time, proper tools, and clear mechanical focus to get your bike running right.
+    </p>
+</section>
+
+<!-- Core Scope Grid -->
+<div style="margin-bottom: 1.5rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-main);">Scope of Service</h2>
+</div>
+<section class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;">
+        <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Mechanical Tuning</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Precise adjustment for high-end groupsets. Correct torque settings for carbon parts and clean internal routing setups.</p>
+    </div>
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;">
+        <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Custom Builds</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Building bikes from the frame up. Tracking component compatibility and handling parts sourcing cleanly.</p>
+    </div>
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px;">
+        <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Upgrades &amp; Electronics</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">Installing electronic groupsets (Di2, AXS), cockpit swaps, and optimizing drivetrain parts.</p>
+    </div>
+</section>
+
+<!-- Digital Condition Report Note Below Grid -->
+<div class="report-note" style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0; margin-bottom: 4rem; font-size: 0.9rem; line-height: 1.5;">
+    <strong style="color: var(--text-main); display: block; margin-bottom: 0.25rem;">Included: Digital Bike Condition Report</strong>
+    <span style="color: var(--text-muted);">Every service includes a detailed health log. This covers exact caliper measurements of rotor and pad wear, chain stretch tracking, bearing smoothness checks, and clear photos of key parts.</span>
+</div>
+
+<!-- Diagnostic CTA bar -->
+<section class="diagnostic-cta-bar" style="background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.04) 100%); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; margin-bottom: 4rem;">
+    <div style="max-width: 550px;">
+        <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="height: 8px; width: 8px; background: #25D366; border-radius: 50%; display: inline-block;"></span>
+            Direct WhatsApp Diagnostics
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0; line-height: 1.5;">
+            Skipping gears, noisy parts, or brake issues? Send a video or photo to check part compatibility or trace the problem directly.
+        </p>
+    </div>
+    <a href="{{ url_for('lang_contact', lang='en') }}" style="background: #25D366; color: #000; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.9rem; white-space: nowrap;">Open Workshop Line &rarr;</a>
+</section>
+
+<!-- About Section -->
+<div style="margin-bottom: 1.5rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-main);">Behind the Stand</h2>
+</div>
+<section class="bio-split-section" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 5rem;">
+    <div>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-main); font-weight: 500; margin: 0;">
+            Built on active riding and practical mechanical experience.
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+            Finding mechanical issues and fixing parts stems from a long-time hobby. This workshop exists to apply that same focus directly to performance road and gravel setups.
+        </p>
+    </div>
+    <div>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
+            The specialty is building bikes completely from scratch. This includes checking component compatibility, sourcing parts online, and assembling frames cleanly item by item.
+        </p>
+    </div>
+</section>
+
+<!-- Bottom CTA Conversion block -->
+<section class="bottom-cta-conversion" style="text-align: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 4rem; padding-bottom: 2rem;">
+    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em;">Schedule a Workshop Slot</h2>
+    <p style="font-size: 1rem; color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem auto; line-height: 1.5;">
+        Bikes are handled individually with full focus on one job at a time.
+    </p>
+    <a href="{{ url_for('lang_services', lang='en') }}" style="background: var(--accent); color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 0.9rem;">Explore Service Packages</a>
+</section>
+{% endblock %}

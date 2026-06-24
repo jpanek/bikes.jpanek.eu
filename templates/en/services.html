@@ -1,0 +1,76 @@
+<!-- templates/en/services.html-->
+
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" style="padding: 4rem 0 2rem 0; max-width: 800px;">
+    <h1 style="font-size: 3.2rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1.2rem; color: var(--text-main);">
+        Service <span>Tiers &amp; Pricing</span>
+    </h1>
+    <p style="font-size: 1.25rem; line-height: 1.6; color: var(--text-muted); font-weight: 400; max-width: 650px;">
+        Introductory pricing for standalone adjustments, full servicing, or complete overhauls. Every package includes a digital health report.
+    </p>
+</section>
+
+<!-- Maintenance Packages Section -->
+<div style="margin-bottom: 1.5rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-main);">Maintenance Packages</h2>
+</div>
+
+<section class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+    <!-- Tier 1 -->
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column; height: 100%;">
+        <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0 0 1rem 0; color: var(--text-main);">Safety &amp; Tune</h3>
+        <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex-grow: 1;">Covers derailleur indexing, brake alignment, bolt torque verification, and a basic frame safety check.</p>
+        
+        <div style="padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 0.75rem 0;"><em>Includes Digital Bike Report with photos.</em></p>
+            <span style="font-weight: 700; color: var(--text-main); font-size: 1.2rem; display: block;">1,200 CZK</span>
+        </div>
+    </div>
+
+    <!-- Tier 2 -->
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column; height: 100%;">
+        <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0 0 1rem 0; color: var(--text-main);">Precision Service</h3>
+        <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex-grow: 1;">Everything in the Tune, plus drivetrain cleaning in an ultrasonic tank, headset and bottom bracket bearing checks, and full hydraulic brake bleeding.</p>
+        
+        <div style="padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 0.75rem 0;"><em>Includes Digital Bike Report with photos.</em></p>
+            <span style="font-weight: 700; color: var(--text-main); font-size: 1.2rem; display: block;">2,500 CZK</span>
+        </div>
+    </div>
+
+    <!-- Tier 3 -->
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column; height: 100%;">
+        <h3 style="font-size: 1.2rem; font-weight: 600; margin: 0 0 1rem 0; color: var(--text-main);">Full Overhaul</h3>
+        <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; flex-grow: 1;">Complete bike strip-down to the bare frame. Deep cleaning, fresh grease, bearing service, full hydraulic fluid flush, and new internal cables or routing wires.</p>
+        
+        <div style="padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08);">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 0.75rem 0;"><em>Includes Digital Bike Report with photos.</em></p>
+            <span style="font-weight: 700; color: var(--text-main); font-size: 1.2rem; display: block;">4,900 CZK</span>
+        </div>
+    </div>
+</section>
+
+<!-- Footnote Note Below Grid -->
+<div class="scope-note" style="background: rgba(255,255,255,0.01); border: 1px dashed rgba(255,255,255,0.15); padding: 1.25rem 1.5rem; border-radius: 8px; margin-bottom: 4rem; font-size: 0.9rem; line-height: 1.5; color: var(--text-muted);">
+    <span style="color: var(--text-main); font-weight: 600;">Workshop Approach:</span> These tiers serve as structural baselines. We will always discuss and confirm the exact scope of work first before anything touches the stand, ensuring your bike gets individual treatment and an agreed price.
+</div>
+
+<!-- Custom Projects & Logistics Section -->
+<div style="margin-bottom: 1.5rem;">
+    <h2 style="font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-main);">Custom Projects &amp; Logistics</h2>
+</div>
+
+<section class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Custom Assemblies</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Building bikes from a bare frame or handling full groupset upgrades. Contact me directly to discuss compatibility and get a quote based on your project.</p>
+    </div>
+    <div class="card" style="padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.75rem;">Pick-Up &amp; Drop-Off</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Bike pickup and delivery within Prague to clear up transit issues. Rates are calculated individually based on distance.</p>
+    </div>
+</section>
+{% endblock %}
